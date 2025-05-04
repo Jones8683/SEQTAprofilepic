@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEQTA Profile Customizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Body styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            padding: 20px;
+            width: 280px; /* Width of the container */
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px; /* Rounded edges for the body */
+        }
+
+        /* Heading style */
+        h3 {
+            font-size: 18px;
+            color: #f39c12; /* Gold color for the heading */
+            margin-bottom: 15px;
+        }
+
+        /* File input styles */
+        input[type="file"] {
+            width: 80%; /* Reduced width */
+            padding: 12px;
+            background-color: #333; /* Dark background for the input */
+            color: #fff; /* White text inside the input */
+            border: 2px solid #f39c12; /* Gold border */
+            border-radius: 12px; /* Rounded edges for the input */
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 0 auto; /* Center the input */
+            display: block;
+        }
+
+        input[type="file"]:hover {
+            background-color: #444; /* Lighter dark color on hover */
+        }
+
+        /* Status text */
+        #status {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Upload a Profile Picture</h3>
+    <input type="file" id="upload" accept=".jpg,.jpeg,.png">
+    <p id="status">No file selected.</p>
+    <script src="popup.js"></script>
+</body>
+</html>
