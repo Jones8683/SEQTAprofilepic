@@ -13,7 +13,9 @@ Adds a customizable profile picture to BetterSEQTA+
 **4.** Turn on developer mode, and then select load unpacked, and choose the whole folder with the files in it.
 
 
-**Contributers**
+**Contributers & Credits**
+
+![Contributors](https://contributors-img.web.app/image?repo=Jones8683/SEQTAprofilepic)
 
 
 
