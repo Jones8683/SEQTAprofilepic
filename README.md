@@ -16,8 +16,8 @@ Adds a customizable profile picture to BetterSEQTA+
 
 **Contributers & Credits**
 
-![Contributors](https://contrib.rocks/image?repo=jones8683/seqtaprofilepic&max=100&reload=true#v2)
 
-a
+
+
 
 
