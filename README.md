@@ -15,4 +15,7 @@ Adds a customizable profile picture to BetterSEQTA+
 
 **Contributers & Credits**
 
+![Contributors](https://contributors-img.web.app/image?repo=Jones8683/SEQTAprofilepic)
+
+
 
