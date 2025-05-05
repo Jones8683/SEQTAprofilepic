@@ -15,5 +15,5 @@ Adds a customizable profile picture to BetterSEQTA+
 
 **Contributers & Credits**
 
-
+Yo guys jones told me to say this to get credits, so long pink ponies lmao 
 
