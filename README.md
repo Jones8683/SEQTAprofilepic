@@ -1,10 +1,13 @@
-# SEQTAprofilepic
 Adds a customizable profile picture to BetterSEQTA+
 
-**To install:**
+****To install:****
 
-**1.** Download all files and put them into a folder
+**1.** Make sure you already have the BetterSEQTA+ extension and that it is on.
 
-**2.** Click manage extentions in the toolbar of your Chromium based browser
+**2.** Click on the latest release and download it.
 
-**3.** Turn on developer mode, and then select load unpacked, and choose the whole folder with the files in it.
+**2.** Unzip the folder and extract the files.
+
+**3.** Click manage extensions in the toolbar of your chromium based browser.
+
+**4.** Turn on developer mode, and then select load unpacked, and choose the whole folder with the files in it.
