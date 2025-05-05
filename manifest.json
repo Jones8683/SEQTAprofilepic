@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SEQTA Profile Icon by Jones J",
+  "version": "1.2",
+  "description": "Replace SEQTA profile icon with your own image instantly.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["https://student.cabra.catholic.edu.au/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://student.cabra.catholic.edu.au/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
