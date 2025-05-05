@@ -1,7 +1,7 @@
 Adds a customizable profile picture to BetterSEQTA+
 
 
-****To install:****
+*****To install:*****
 
 **1.** Make sure you already have the BetterSEQTA+ extension and that it is on.
 
