@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEQTA Profile Customizer</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Critical CSS for immediate rendering */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            width: 280px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #f39c12;
+            margin-bottom: 15px;
+        }
+
+        input[type="file"] {
+            width: 80%;
+            padding: 12px;
+            background-color: #333;
+            color: #fff;
+            border: 2px solid #f39c12;
+            border-radius: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 0 auto;
+            display: block;
+        }
+
+        input[type="file"]:hover {
+            background-color: #444;
+        }
+
+        #status {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        #preview {
+            margin-top: 10px;
+        }
+
+        /* Wrapper for preview to make sure the image stays in a circle */
+        #preview img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover; /* Crop the image */
+            object-position: center; /* Center the image */
+            border: 2px solid #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <h3>Upload a Profile Picture</h3>
+    <input type="file" id="upload" accept=".jpg,.jpeg,.png">
+    <p id="status">No file selected.</p>
+    <div id="preview"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
