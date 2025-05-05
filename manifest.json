@@ -5,23 +5,18 @@
   "description": "Replace SEQTA profile icon with your own image instantly.",
   "permissions": ["storage", "scripting", "activeTab"],
   "host_permissions": ["https://student.cabra.catholic.edu.au/*"],
-  "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
-  },
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
-    }
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": ["https://student.cabra.catholic.edu.au/*"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }
