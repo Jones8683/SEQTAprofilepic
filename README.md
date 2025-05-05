@@ -11,3 +11,9 @@ Adds a customizable profile picture to BetterSEQTA+
 **3.** Click manage extensions in the toolbar of your chromium based browser.
 
 **4.** Turn on developer mode, and then select load unpacked, and choose the whole folder with the files in it.
+
+
+**Contributers**
+<div>
+  <img src="https://github.com/Jones8683/SEQTAprofilepic/graphs/contributors" />
+</div>
