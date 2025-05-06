@@ -1,50 +1,54 @@
-document.getElementById('upload').addEventListener('change', function () {
-    const file = this.files[0];
-    const status = document.getElementById('status');
-    const preview = document.getElementById('preview');
+function replaceImage() {
+    // Select the target SVG
+    const svg = document.querySelector('svg.userInfosvg');
+    if (!svg) return;
 
-    if (!file) {
-        status.textContent = 'No file selected.';
-        preview.innerHTML = '';
-        return;
-    }
+    // Fetch the stored profile image
+    chrome.storage.local.get('profileImage', (data) => {
+        const imageSrc = data.profileImage;
+        if (!imageSrc) return;
 
-    const reader = new FileReader();
-    reader.onload = function () {
-        const base64 = reader.result;
-        chrome.storage.local.set({
-            profileImage: base64,
-            profileFilename: file.name
-        }, () => {
-            status.textContent = `Saved: ${file.name}`;
-            preview.innerHTML = `<img src="${base64}" alt="Preview">`;
+        // Hide existing elements
+        const outerCircle = svg.querySelector('path[d*="A10,10"]');
+        const innerCircle = svg.querySelector('path[d*="A3,3"]');
+        if (outerCircle) outerCircle.style.display = 'none';
+        if (innerCircle) innerCircle.style.display = 'none';
 
-            // Trigger the image replacement on the webpage
-            chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-                chrome.scripting.executeScript({
-                    target: { tabId: tabs[0].id },
-                    func: replaceImage
-                });
-            });
-        });
-    };
-    reader.readAsDataURL(file);
-});
+        // Add a placeholder circle
+        const blackCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        blackCircle.setAttribute('cx', '12');
+        blackCircle.setAttribute('cy', '12');
+        blackCircle.setAttribute('r', '25');
+        blackCircle.setAttribute('fill', 'black');
+        svg.appendChild(blackCircle);
 
-document.addEventListener('DOMContentLoaded', () => {
-    const status = document.getElementById('status');
-    const preview = document.getElementById('preview');
+        // Replace with the profile image
+        const img = document.createElement('img');
+        img.src = imageSrc;
+        img.style.width = '40px';
+        img.style.height = '40px';
+        img.style.borderRadius = '50%';
+        img.style.position = 'absolute';
+        img.style.left = '50%';
+        img.style.top = '50%';
+        img.style.transform = 'translate(-50%, -50%)';
+        img.style.border = '3px solid white';
+        img.style.objectFit = 'cover';
+        img.style.aspectRatio = '1/1';
+        img.style.overflow = 'hidden';
 
-    chrome.storage.local.get(['profileImage', 'profileFilename'], (data) => {
-        const base64 = data.profileImage;
-        const filename = data.profileFilename;
-
-        if (base64) {
-            status.textContent = filename ? `Saved: ${filename}` : 'Image already selected.';
-            preview.innerHTML = `<img src="${base64}" alt="Preview">`;
-        } else {
-            status.textContent = 'No file selected.';
-            preview.innerHTML = '';
-        }
+        // Replace the SVG with the image
+        svg.parentNode.replaceChild(img, svg);
     });
+}
+
+// Immediately run replaceImage on page load
+replaceImage();
+
+// Use MutationObserver for dynamic updates
+const observer = new MutationObserver(() => {
+    replaceImage();
 });
+
+// Observe changes in the DOM
+observer.observe(document.body, { childList: true, subtree: true });
