@@ -42,6 +42,9 @@ function replaceImage() {
     });
 }
 
+// Immediately run replaceImage on page load
+replaceImage();
+
 // Use MutationObserver for dynamic updates
 const observer = new MutationObserver(() => {
     replaceImage();
