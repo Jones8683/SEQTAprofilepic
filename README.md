@@ -13,6 +13,9 @@ Adds a customizable profile picture to BetterSEQTA+
 
 **4.** Turn on developer mode, and then select load unpacked, and choose the whole folder with the files in it.
 
+**Issues & Feature Requests**
+
+If you find a bug with the extension, or would like a feauture added, please make your request in the [issues](https://github.com/Jones8683/SEQTAprofilepic/issues) tab.
 
 _**Contributers & Credits**_
 
