@@ -20,9 +20,6 @@ _**Contributers & Credits**_
 
 
 
-hi im isaac
-
-
 
 
 
