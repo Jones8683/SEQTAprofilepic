@@ -14,11 +14,10 @@ Adds a customizable profile picture to BetterSEQTA+
 **4.** Turn on developer mode, and then select load unpacked, and choose the whole folder with the files in it.
 
 
-**Contributers & Credits**
+_**Contributers & Credits**_
 
-<a href="https://github.com/jones8683/seqtaprofilepic/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jones8683/seqtaprofilepic&max=150" />
-</a>
+[![Contributors](https://contrib.rocks/image?repo=jones8683/seqtaprofilepic&max=150)](https://github.com/jones8683/seqtaprofilepic/graphs/contributors)
+
 
 
 
