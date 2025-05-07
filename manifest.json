@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "SEQTA Profile Icon by Jones J",
+  "name": "SEQTA Profile Picture",
   "version": "1.3.1",
   "description": "Replace SEQTA profile icon with your own image instantly.",
   "permissions": ["storage", "scripting", "activeTab"],
