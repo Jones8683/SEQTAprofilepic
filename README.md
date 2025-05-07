@@ -1,7 +1,7 @@
 Adds a customizable profile picture to BetterSEQTA+
 
 
-*****To install:*****
+**To install:**
 
 **1.** Make sure you already have the BetterSEQTA+ extension and that it is on.
 
@@ -17,7 +17,7 @@ Adds a customizable profile picture to BetterSEQTA+
 
 If you find a bug with the extension, or would like a feauture added, please make your request in the [issues](https://github.com/Jones8683/SEQTAprofilepic/issues) tab.
 
-_**Contributers & Credits**_
+**Contributers & Credits**
 
 <a href="https://github.com/Jones8683/seqtaprofilepic/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Jones8683/seqtaprofilepic" />
