@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const filename = data.profileFilename;
 
         if (base64) {
-            status.textContent = filename ? `Saved: ${filename}` : 'Image already selected.';
+            status.textContent = filename ? `Saved:` : 'Image already selected.';
             preview.innerHTML = `<img src="${base64}" alt="Preview">`;
         } else {
             status.textContent = 'No file selected.';
