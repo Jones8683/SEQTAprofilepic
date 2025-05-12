@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SEQTA Profile Picture",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Replace BetterSEQTA+ profile icon with your own image instantly. Created by Jones J",
   "permissions": ["storage", "scripting", "activeTab"],
   "host_permissions": ["https://student.cabra.catholic.edu.au/*"],
