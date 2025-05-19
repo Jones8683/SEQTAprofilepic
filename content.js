@@ -42,7 +42,7 @@ function replaceImage() {
     });
 }
 
-// Immediately replace image on page load
+// Immediately insert image on page load
 replaceImage();
 
 // Check for updates
@@ -50,5 +50,5 @@ const observer = new MutationObserver(() => {
     replaceImage();
 });
 
-// Observe changes in the DOM
+// Observe changes
 observer.observe(document.body, { childList: true, subtree: true });
