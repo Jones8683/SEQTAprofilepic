@@ -1,4 +1,4 @@
-// Function to detect SEQTA copyright comment
+// Function to detect if the webpage is a SEQTA instance
 function isSEQTA() {
     // Scan the root node for comment nodes
     const nodeIterator = document.createNodeIterator(
@@ -18,7 +18,7 @@ function isSEQTA() {
 }
 
 function replaceImage() {
-    // Find the SVG avatar (adjust selector for your SEQTA version if needed)
+    // Find the SVG avatar
     const svg = document.querySelector('svg.userInfosvg');
     if (!svg) return;
 
@@ -65,7 +65,7 @@ if (isSEQTA()) {
     // Run once on page load
     replaceImage();
 
-    // Watch for DOM changes (SEQTA sometimes reloads the avatar dynamically)
+    // Watch for DOM changes
     const observer = new MutationObserver(() => replaceImage());
     observer.observe(document.body, { childList: true, subtree: true });
 }
