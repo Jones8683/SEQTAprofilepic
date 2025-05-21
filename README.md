@@ -19,11 +19,11 @@ Adds a customizable profile picture to BetterSEQTA+
 
 **2.** Select "upload image", and choose your profile picture.
 
-**Issues & Feature Requests**
+**Issues & Feature Requests:**
 
 If you find a bug with the extension, or would like a feauture added, please make your request in the [issues](https://github.com/Jones8683/SEQTAprofilepic/issues) tab.
 
-**Contributers & Credits**
+**Contributers:**
 
 <a href="https://github.com/Jones8683/seqtaprofilepic/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Jones8683/seqtaprofilepic" />
