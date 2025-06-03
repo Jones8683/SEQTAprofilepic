@@ -1,4 +1,4 @@
-Adds a customizable profile picture to BetterSEQTA+
+Adds a customizable profile picture to [BetterSEQTA+](https://github.com/BetterSEQTA/BetterSEQTA-Plus)
 
 
 **To install:**
@@ -9,7 +9,7 @@ Adds a customizable profile picture to BetterSEQTA+
 
 **2.** Unzip the folder and extract the files.
 
-**3.** Click manage extensions in the toolbar of your chromium based browser.
+**3.** Click manage extensions in the toolbar of your browser or go to `chrome://extensions`
 
 **4.** Turn on developer mode, and then select load unpacked, and choose the whole folder with the files in it.
 
@@ -19,9 +19,9 @@ Adds a customizable profile picture to BetterSEQTA+
 
 **2.** Select "upload image", and choose your profile picture.
 
-**Issues & Feature Requests:**
+**Issues:**
 
-If you find a bug with the extension, or would like a feauture added, please make your request in the [issues](https://github.com/Jones8683/SEQTAprofilepic/issues) tab.
+If you find a bug with the extension please report it in the [issues](https://github.com/Jones8683/SEQTAprofilepic/issues) tab.
 
 
 
