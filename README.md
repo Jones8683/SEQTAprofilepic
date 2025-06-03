@@ -5,7 +5,7 @@ Adds a customizable profile picture to [BetterSEQTA+](https://github.com/BetterS
 
 **1.** Make sure you already have the BetterSEQTA+ extension and that it is on.
 
-**2.** Click on the latest release and download it.
+**2.** Click on the latest release and download it or use [this link](https://github.com/Jones8683/SEQTAprofilepic/archive/refs/tags/1.3.3.zip).
 
 **2.** Unzip the folder and extract the files.
 
